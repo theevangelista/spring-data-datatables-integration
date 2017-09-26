@@ -3,13 +3,15 @@ spring-data-datatables-integration
 
 A simple integration using Spring Data JPA Pages and Datatables v1.10+. Inspired by Dandelion Datatables
 
-##Simple Usage
+## Simple Usage
+
 With your Spring Data and repositories configured you just need pass parameters!
 Data supports JPA Criteria API and QueryDSL making the search easy just extends you repository to each one you need
 `QueryDslPredicateExecutor<Foo>` or ` JpaSpecificationExecutor<Foo>`
 
 
-###On a controller
+### On a controller
+
 ```java
 
    @RequestMapping(value = "/getTable", method = RequestMethod.GET)
@@ -21,7 +23,8 @@ Data supports JPA Criteria API and QueryDSL making the search easy just extends 
 
 ```
 
-###On the service layer
+### On the service layer
+
 ```java
 
     public Page<Foo> findAll(int currentPageIndex, int lenght, String search) {
